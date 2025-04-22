@@ -1,0 +1,28 @@
+/* Reduce the font size of the column headers in the admin panel */
+#changelist-form th {
+    font-size: 12px !important; /* Adjust font size */
+    border-right: 1px solid #d3d3d3; /* Add a light gray vertical line between columns */
+    padding-right: 10px; /* Optional: Add padding for better spacing */
+}
+
+/* Reduce the font size of the data cells and add vertical lines */
+#changelist-form td {
+    font-size: 12px !important; /* Adjust font size */
+    border-right: 1px solid #d3d3d3; /* Add the same light gray vertical line */
+    padding-right: 10px; /* Optional: Add padding for better spacing */
+}
+
+/* Optionally remove the right border from the last column */
+#changelist-form th:last-child,
+#changelist-form td:last-child {
+    border-right: none; /* Remove the border on the last column */
+}
+
+
+.order-details {
+    display: none;
+}
+/* You can style the date picker input if necessary */
+.filter-date {
+    margin-bottom: 10px;
+}

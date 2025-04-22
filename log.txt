@@ -1,0 +1,1661 @@
+Traceback (most recent call last):
+  File "/home/decorati/api.decorationbd.com/passenger_wsgi.py", line 8, in <module>
+    wsgi = imp.load_source('wsgi', 'decobdApi/wsgi.py')
+  File "/opt/alt/python310/lib64/python3.10/imp.py", line 172, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 719, in _load
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "decobdApi/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ModuleNotFoundError: No module named 'django'
+Traceback (most recent call last):
+  File "/home/decorati/api.decorationbd.com/passenger_wsgi.py", line 8, in <module>
+    wsgi = imp.load_source('wsgi', 'decobdApi/wsgi.py')
+  File "/opt/alt/python310/lib64/python3.10/imp.py", line 172, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 719, in _load
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "decobdApi/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ModuleNotFoundError: No module named 'django'
+[UID:1452][943697] Child process with pid: 943700 was killed by signal: 15, core dumped: no
+Not Found: /
+Unauthorized: /api/user/profile/
+Session Key: None
+Unauthorized: /api/user/profile/
+Session Key: None
+Session Key: None
+Session Key: None
+Encoded name received: Test%20Products
+Decoded name: Test Products
+Session Key: None
+Session Key: None
+Session Key: None
+Internal Server Error: /api/customershippingaddress/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py", line 434, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/customerSection/views.py", line 12, in get
+    customer_shipping_address = CustomerShippingAddress.objects.filter(user=user)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f9d0c467040>.
+Internal Server Error: /api/place-order/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Orders/views.py", line 109, in post
+    send_create_user_message_for_admin(user_and_owner_data)
+  File "/home/decorati/api.decorationbd.com/EmailTemplate/SendEmailAllTypesFuction.py", line 50, in send_create_user_message_for_admin
+    email_template_owner = EmailTemplate.objects.get(message_type='Create user message for owner')
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+EmailTemplate.models.EmailTemplate.DoesNotExist: EmailTemplate matching query does not exist.
+Session Key: None
+No active welcome email template found.
+Unauthorized: /api/user/profile/
+Session Key: None
+Unauthorized: /api/user/profile/
+Session Key: None
+Session Key: None
+Internal Server Error: /api/customershippingaddress/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py", line 434, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/customerSection/views.py", line 12, in get
+    customer_shipping_address = CustomerShippingAddress.objects.filter(user=user)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f09f6a471c0>.
+Unauthorized: /api/user/profile/
+Internal Server Error: /api/customershippingaddress/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py", line 434, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/customerSection/views.py", line 12, in get
+    customer_shipping_address = CustomerShippingAddress.objects.filter(user=user)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f09f5cfadd0>.
+Session Key: None
+Unauthorized: /api/user/profile/
+Session Key: None
+Internal Server Error: /api/customershippingaddress/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py", line 434, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/customerSection/views.py", line 12, in get
+    customer_shipping_address = CustomerShippingAddress.objects.filter(user=user)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f09f5bbca30>.
+Internal Server Error: /api/place-order/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Orders/views.py", line 109, in post
+    send_create_user_message_for_admin(user_and_owner_data)
+  File "/home/decorati/api.decorationbd.com/EmailTemplate/SendEmailAllTypesFuction.py", line 50, in send_create_user_message_for_admin
+    email_template_owner = EmailTemplate.objects.get(message_type='Create user message for owner')
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+EmailTemplate.models.EmailTemplate.DoesNotExist: EmailTemplate matching query does not exist.
+Unauthorized: /api/user/profile/
+Encoded name received: Test%20Products
+Decoded name: Test Products
+Session Key: None
+Session Key: None
+Internal Server Error: /api/customershippingaddress/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py", line 434, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/customerSection/views.py", line 12, in get
+    customer_shipping_address = CustomerShippingAddress.objects.filter(user=user)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f09f5c19a80>.
+Session Key: None
+Internal Server Error: /api/place-order/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Orders/views.py", line 109, in post
+    send_create_user_message_for_admin(user_and_owner_data)
+  File "/home/decorati/api.decorationbd.com/EmailTemplate/SendEmailAllTypesFuction.py", line 50, in send_create_user_message_for_admin
+    email_template_owner = EmailTemplate.objects.get(message_type='Create user message for owner')
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+EmailTemplate.models.EmailTemplate.DoesNotExist: EmailTemplate matching query does not exist.
+Unauthorized: /api/user/profile/
+Session Key: None
+Session Key: None
+Session Key: None
+Session Key: None
+Internal Server Error: /api/user/google/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Users/views.py", line 122, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "/home/decorati/api.decorationbd.com/Users/serializers.py", line 216, in validate_access_token
+    return register_social_user(provider,email,username)
+  File "/home/decorati/api.decorationbd.com/Users/utils.py", line 71, in register_social_user
+    send_create_user_message_for_admin(user_and_owner_data)
+  File "/home/decorati/api.decorationbd.com/EmailTemplate/SendEmailAllTypesFuction.py", line 50, in send_create_user_message_for_admin
+    email_template_owner = EmailTemplate.objects.get(message_type='Create user message for owner')
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+EmailTemplate.models.EmailTemplate.DoesNotExist: EmailTemplate matching query does not exist.
+Rajib
+No active welcome email template found.
+Unauthorized: /api/user/profile/
+Internal Server Error: /api/user/google/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Users/views.py", line 122, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "/home/decorati/api.decorationbd.com/Users/serializers.py", line 216, in validate_access_token
+    return register_social_user(provider,email,username)
+  File "/home/decorati/api.decorationbd.com/Users/utils.py", line 71, in register_social_user
+    send_create_user_message_for_admin(user_and_owner_data)
+  File "/home/decorati/api.decorationbd.com/EmailTemplate/SendEmailAllTypesFuction.py", line 50, in send_create_user_message_for_admin
+    email_template_owner = EmailTemplate.objects.get(message_type='Create user message for owner')
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+EmailTemplate.models.EmailTemplate.DoesNotExist: EmailTemplate matching query does not exist.
+Rajib
+No active welcome email template found.
+Session Key: None
+Session Key: None
+Session Key: None
+No active welcome email template found.
+Session Key: None
+Session Key: None
+No active welcome email template found.
+Session Key: None
+Unauthorized: /api/user/profile/
+Session Key: None
+Not Found: /api/products/s3-es-single-monitor-arm-capacity-10kg
+Not Found: /api/products/s3-es-single-monitor-arm-capacity-10kg
+Encoded name received: s3-es-single-monitor-arm-capacity-10kg
+Decoded name: s3-es-single-monitor-arm-capacity-10kg
+Encoded name received: s3-es-single-monitor-arm-capacity-10kg
+Decoded name: s3-es-single-monitor-arm-capacity-10kg
+Unauthorized: /api/user/profile/
+Session Key: None
+Unauthorized: /api/user/profile/
+Unauthorized: /api/user/profile/
+Internal Server Error: /api/customershippingaddress/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py", line 434, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/customerSection/views.py", line 12, in get
+    customer_shipping_address = CustomerShippingAddress.objects.filter(user=user)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f471dadbd90>.
+Internal Server Error: /api/place-order/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Orders/views.py", line 109, in post
+    send_create_user_message_for_admin(user_and_owner_data)
+  File "/home/decorati/api.decorationbd.com/EmailTemplate/SendEmailAllTypesFuction.py", line 50, in send_create_user_message_for_admin
+    email_template_owner = EmailTemplate.objects.get(message_type='Create user message for owner')
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+EmailTemplate.models.EmailTemplate.DoesNotExist: EmailTemplate matching query does not exist.
+Unauthorized: /api/user/profile/
+Unauthorized: /api/user/profile/
+Unauthorized: /api/user/profile/
+Internal Server Error: /api/products/Single%20Monitor%20Stand%20(S1)%20%E2%80%93%20Capacity%2010Kg-upto%2029%22
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Products/views.py", line 25, in get
+    print(f"Decoded name: {decoded_name}")
+UnicodeEncodeError: 'ascii' codec can't encode character '\u2013' in position 40: ordinal not in range(128)
+Encoded name received: Single%20Monitor%20Stand%20(S1)%20%E2%80%93%20Capacity%2010Kg-upto%2029%22
+Internal Server Error: /api/products/Single%20Monitor%20Stand%20(S1)%20%E2%80%93%20Capacity%2010Kg-upto%2029%22
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Products/views.py", line 25, in get
+    print(f"Decoded name: {decoded_name}")
+UnicodeEncodeError: 'ascii' codec can't encode character '\u2013' in position 40: ordinal not in range(128)
+Encoded name received: Single%20Monitor%20Stand%20(S1)%20%E2%80%93%20Capacity%2010Kg-upto%2029%22
+Internal Server Error: /api/products/Single%20Monitor%20Arm%20(S3)%E2%80%93%20Capacity%2010kg
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Products/views.py", line 25, in get
+    print(f"Decoded name: {decoded_name}")
+UnicodeEncodeError: 'ascii' codec can't encode character '\u2013' in position 37: ordinal not in range(128)
+Encoded name received: Single%20Monitor%20Arm%20(S3)%E2%80%93%20Capacity%2010kg
+Internal Server Error: /api/products/Single%20Monitor%20Stand%20(S1)%20%E2%80%93%20Capacity%2010Kg-upto%2029%22
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Products/views.py", line 25, in get
+    print(f"Decoded name: {decoded_name}")
+UnicodeEncodeError: 'ascii' codec can't encode character '\u2013' in position 40: ordinal not in range(128)
+Encoded name received: Test%20Products
+Decoded name: Test Products
+Session Key: None
+Session Key: None
+Session Key: None
+No active welcome email template found.
+Session Key: None
+Session Key: None
+Session Key: None
+Encoded name received: (S-5)%20Single%20Monitor%20Arm%20WallMount%20Capacity%20upto%208Kg-
+Decoded name: (S-5) Single Monitor Arm WallMount Capacity upto 8Kg-
+Encoded name received: Single%20Monitor%20Stand%20(S1)%20%E2%80%93%20Capacity%2010Kg-upto%2029%22
+Session Key: None
+Payment failure and order cancelled email template not found.
+No active welcome email template found.
+No active welcome email template found.
+Internal Server Error: /api/customershippingaddress/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py", line 434, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/customerSection/views.py", line 12, in get
+    customer_shipping_address = CustomerShippingAddress.objects.filter(user=user)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f471dae4190>.
+Internal Server Error: /api/place-order/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Orders/views.py", line 109, in post
+    send_create_user_message_for_admin(user_and_owner_data)
+  File "/home/decorati/api.decorationbd.com/EmailTemplate/SendEmailAllTypesFuction.py", line 50, in send_create_user_message_for_admin
+    email_template_owner = EmailTemplate.objects.get(message_type='Create user message for owner')
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+EmailTemplate.models.EmailTemplate.DoesNotExist: EmailTemplate matching query does not exist.
+Internal Server Error: /api/place-order/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'mnhodaraji.b@gmail.com' for key 'Users_user.email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Orders/views.py", line 90, in post
+    user = User.objects.create_user(
+  File "/home/decorati/api.decorationbd.com/Users/models.py", line 21, in create_user
+    user.save(using=self._db)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 68, in save
+    super().save(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'mnhodaraji.b@gmail.com' for key 'Users_user.email'")
+Internal Server Error: /api/place-order/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Orders/views.py", line 109, in post
+    send_create_user_message_for_admin(user_and_owner_data)
+  File "/home/decorati/api.decorationbd.com/EmailTemplate/SendEmailAllTypesFuction.py", line 50, in send_create_user_message_for_admin
+    email_template_owner = EmailTemplate.objects.get(message_type='Create user message for owner')
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+EmailTemplate.models.EmailTemplate.DoesNotExist: EmailTemplate matching query does not exist.
+Session data corrupted
+Unauthorized: /api/user/profile/
+Encoded name received: Test%20Products
+Decoded name: Test Products
+Internal Server Error: /api/customershippingaddress/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py", line 434, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/customerSection/views.py", line 12, in get
+    customer_shipping_address = CustomerShippingAddress.objects.filter(user=user)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f471dae9b10>.
+Session Key: None
+Session Key: None
+Internal Server Error: /api/place-order/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Orders/views.py", line 109, in post
+    send_create_user_message_for_admin(user_and_owner_data)
+  File "/home/decorati/api.decorationbd.com/EmailTemplate/SendEmailAllTypesFuction.py", line 50, in send_create_user_message_for_admin
+    email_template_owner = EmailTemplate.objects.get(message_type='Create user message for owner')
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+EmailTemplate.models.EmailTemplate.DoesNotExist: EmailTemplate matching query does not exist.
+Session Key: None
+Session Key: None
+No active welcome email template found.
+Payment failure and order cancelled email template not found.
+No active welcome email template found.
+Session Key: None
+Encoded name received: Test%20Products
+Decoded name: Test Products
+Session Key: None
+No active welcome email template found.
+No active welcome email template found.
+Unauthorized: /api/user/profile/
+Session Key: None
+Unauthorized: /api/user/profile/
+Internal Server Error: /api/customershippingaddress/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py", line 434, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/customerSection/views.py", line 12, in get
+    customer_shipping_address = CustomerShippingAddress.objects.filter(user=user)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f9976121120>.
+Encoded name received: Test%20Products
+Decoded name: Test Products
+Session Key: None
+Session Key: None
+Unauthorized: /api/user/profile/
+Unauthorized: /api/user/profile/
+Unauthorized: /api/user/profile/
+Unauthorized: /api/user/profile/
+Unauthorized: /api/user/profile/
+[UID:1452][1021202] Child process with pid: 1021211 was killed by signal: 15, core dumped: no
+Unauthorized: /api/user/profile/
+[UID:1452][1021202] Child process with pid: 1021303 was killed by signal: 15, core dumped: no
+[UID:1452][1021202] Child process with pid: 1021212 was killed by signal: 15, core dumped: no
+[UID:1452][1021202] Child process with pid: 1021213 was killed by signal: 15, core dumped: no
+[UID:1452][1021202] Child process with pid: 1021327 was killed by signal: 15, core dumped: no
+[UID:1452][1021202] Child process with pid: 1021331 was killed by signal: 15, core dumped: no
+[UID:1452][1021202] Child process with pid: 1021332 was killed by signal: 15, core dumped: no
+[UID:1452][1021202] Child process with pid: 1021330 was killed by signal: 15, core dumped: no
+[UID:1452][1021202] Child process with pid: 1021333 was killed by signal: 15, core dumped: no
+[UID:1452][1021202] Child process with pid: 1021334 was killed by signal: 15, core dumped: no
+Unauthorized: /api/user/profile/
+Unauthorized: /api/user/profile/
+Unauthorized: /api/user/profile/
+Session Key: None
+Unauthorized: /api/user/profile/
+[UID:1452][1021202] Child process with pid: 1021548 was killed by signal: 15, core dumped: no
+[UID:1452][1021202] Child process with pid: 1021547 was killed by signal: 15, core dumped: no
+[UID:1452][1021202] Child process with pid: 1021549 was killed by signal: 15, core dumped: no
+Unauthorized: /api/user/profile/
+Unauthorized: /api/user/profile/
+[UID:1452][1021202] Child process with pid: 1021553 was killed by signal: 15, core dumped: no
+[UID:1452][1021202] Child process with pid: 1021338 was killed by signal: 15, core dumped: no
+[UID:1452][1021202] Child process with pid: 1021554 was killed by signal: 15, core dumped: no
+Unauthorized: /api/user/profile/
+Session Key: None
+Session Key: None
+Not Found: /api/products/verticaldual-1
+Unauthorized: /api/user/profile/
+Session Key: None
+Internal Server Error: /api/customershippingaddress/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py", line 434, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/customerSection/views.py", line 12, in get
+    customer_shipping_address = CustomerShippingAddress.objects.filter(user=user)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f3e3d8d0ca0>.
+Internal Server Error: /api/place-order/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'mnhodarajib@gmail.com' for key 'customerSection_customershippingaddress.email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Orders/views.py", line 128, in post
+    shipping_address = CustomerShippingAddress.objects.create(**shipping_address_data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'mnhodarajib@gmail.com' for key 'customerSection_customershippingaddress.email'")
+Internal Server Error: /api/place-order/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'mnhodarajib@gmail.com' for key 'customerSection_customershippingaddress.email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Orders/views.py", line 128, in post
+    shipping_address = CustomerShippingAddress.objects.create(**shipping_address_data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'mnhodarajib@gmail.com' for key 'customerSection_customershippingaddress.email'")
+Internal Server Error: /api/place-order/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'mnhodarajib@gmail.com' for key 'customerSection_customershippingaddress.email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Orders/views.py", line 128, in post
+    shipping_address = CustomerShippingAddress.objects.create(**shipping_address_data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'mnhodarajib@gmail.com' for key 'customerSection_customershippingaddress.email'")
+Unauthorized: /api/user/profile/
+Unauthorized: /api/user/profile/
+Unauthorized: /api/user/profile/
+Session Key: None
+Internal Server Error: /api/customershippingaddress/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py", line 434, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/customerSection/views.py", line 12, in get
+    customer_shipping_address = CustomerShippingAddress.objects.filter(user=user)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f3e3d8f1d50>.
+Internal Server Error: /api/place-order/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Orders/views.py", line 109, in post
+    send_create_user_message_for_admin(user_and_owner_data)
+  File "/home/decorati/api.decorationbd.com/EmailTemplate/SendEmailAllTypesFuction.py", line 50, in send_create_user_message_for_admin
+    email_template_owner = EmailTemplate.objects.get(message_type='Create user message for owner')
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+EmailTemplate.models.EmailTemplate.DoesNotExist: EmailTemplate matching query does not exist.
+Unauthorized: /api/user/profile/
+Encoded name received: Test%20Products
+Decoded name: Test Products
+Session Key: None
+Session Key: None
+Session Key: None
+Internal Server Error: /api/customershippingaddress/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py", line 434, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/customerSection/views.py", line 12, in get
+    customer_shipping_address = CustomerShippingAddress.objects.filter(user=user)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f3e3e66b190>.
+Session Key: None
+Session Key: None
+Session Key: None
+Unauthorized: /api/user/profile/
+Session Key: None
+Session Key: None
+Session Key: None
+Session Key: None
+Session Key: None
+Unauthorized: /api/user/profile/
+Session Key: None
+Internal Server Error: /api/customershippingaddress/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py", line 434, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/customerSection/views.py", line 12, in get
+    customer_shipping_address = CustomerShippingAddress.objects.filter(user=user)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f3e3da15c30>.
+Internal Server Error: /api/place-order/
+Traceback (most recent call last):
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/decorati/api.decorationbd.com/Orders/views.py", line 109, in post
+    send_create_user_message_for_admin(user_and_owner_data)
+  File "/home/decorati/api.decorationbd.com/EmailTemplate/SendEmailAllTypesFuction.py", line 50, in send_create_user_message_for_admin
+    email_template_owner = EmailTemplate.objects.get(message_type='Create user message for owner')
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/decorati/virtualenv/api.decorationbd.com/3.10/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+EmailTemplate.models.EmailTemplate.DoesNotExist: EmailTemplate matching query does not exist.
+Bad Request: /api/place-order/
+No active welcome email template found.
+Session Key: None
+Session Key: None
+Session Key: None
+Encoded name received: Test%20Products
+Decoded name: Test Products
+Session Key: None
+Session Key: None
+Encoded name received: Test%20Products
+Decoded name: Test Products
+Session Key: None
+Session Key: None
+Session Key: None
+Encoded name received: verticaldual-1
+Decoded name: verticaldual-1
+Session Key: None
+Encoded name received: Test%20Products
+Decoded name: Test Products
+Session Key: None
+Session Key: None
+No active welcome email template found.
